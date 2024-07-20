@@ -79,7 +79,7 @@
         console.log("Received location data:", data);
         const { id, latitude, longitude } = data;
         console.log("Map object:", map);
-        map.setView([latitude, longitude], 14);
+        map.setView([latitude, longitude], 20);
         if (markers[id]) {
           markers[id].setLatLng([latitude, longitude]);
         } else {
